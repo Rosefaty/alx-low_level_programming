@@ -1,18 +1,16 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - print the number of arguments passed to the program
- * @argc: number of arguments
- * @argv: array of arguments
+ * _isupper - uppercase letters
+ * @c: char to check
  *
- * Return: Always 0 (Success)
+ * Return: 0 or 1
  */
 
-int main(int argc, char *argv[])
+int _isupper(int c)
 {
-	(void) argv; /*Ignore argv*/
-	printf("%d\n", argc - 1);
-
-	return (0);
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 }
